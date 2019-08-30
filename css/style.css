@@ -7,16 +7,24 @@ body{
 	margin:10px auto 10px auto;
 }
 .logo{
-	
+	margin: auto;
+	display: table-cell;
 }
 .dobra1{
 	background-color: yellow; 
-	background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Belo_Horizonte_Luzes.jpg/1000px-Belo_Horizonte_Luzes.jpg') no-repeat center;
+	background: url('http://idebrasil.com.br/ednpalhoca/imagens/bh-PedRodarte.jpg') no-repeat center;
 	background-size:cover;
+	padding: 50px;
+}
+  @media (max-width: 480px) {
+  .dobra1 {
+	padding: 10px;
+  }
 }
 .caixas{
 	background-color:red;
-	max-width:200px;
+	font-weight: bold;
+	max-width:250px;
 	padding: 20px;
 	text-align:center;
 	margin: 25px auto 25px auto;
@@ -28,10 +36,18 @@ body{
 	display: table-cell;
 	margin: auto;
 	width: 90%;
-	max-width: 100%;
+	max-width: 550px;
   	height: auto;
   	padding: 25px 0px 0px 0px;
   }
+
+  @media (max-width: 480px) {
+  #edn-logo {
+    width: 100%;
+  	padding: 25px 0px 0px 0px;
+  }
+}
+
 #logo{
 	display: block;
 	margin: auto;
@@ -39,7 +55,7 @@ body{
 	max-height: 80px;
   	max-width: 100%;
   	height: auto;
-  	padding: 20px 0px;
+  	padding: 10px 0px;
 }
 .exclusivo{
 	display: block;
@@ -48,6 +64,13 @@ body{
 	width:auto;
 	text-align:center;
 	padding: 10px;
+	font-weight:bolder;
+}
+
+@media (max-width: 320px) {
+  .exclusivo {
+    font-size: 12px;
+  }
 }
 .button {
 	background-color: #4CAF50; 
@@ -58,7 +81,7 @@ body{
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
-	margin:auto;
+	margin:auto auto 10px auto;
 	display: flex; 
 	justify-content: center;
 	border-radius: 5px;
@@ -66,40 +89,40 @@ body{
 	position:relative;
 	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
 	-webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
 	animation-name: example;
-	animation-delay: 2s;
+	animation-delay: 1s;
 	animation-duration: 6s;
-	.animation-iteration-count: infinite;
-
+	animation-iteration-count: infinite;
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
-  0%   {background-color: green; left:0px; right: 0px;}
-  10%  {background-color: MediumSeaGreen ; left:5px; right: 5px;}
-  20%  {background-color: green ;left:0px; right: 0px;}
-  30% {background-color: MediumSeaGreen ;left:5px; right: 5px;}
-  40%   {background-color: green; left:0px; right: 0px;}
-  50%  {background-color: MediumSeaGreen ; left:5px; right: 5px;}
-  60%  {background-color: green ;left:0px; right: 0px;}
-  70% {background-color: MediumSeaGreen ;left:5px; right: 5px;}
-  80%  {background-color: green ;left:0px; right: 0px;}
-  90% {background-color: MediumSeaGreen ;left:5px; right: 5px;}
-  100%  {background-color: green ;left:0px; right: 0px;}
+	0%  {background-color: #4CAF50 ;left:0px; right: 0px;}
+	40%  {background-color: #4CAF50 ;left:0px; right: 0px;}
+	45% {background-color: MediumSeaGreen ;left:2px; right: 2px;}
+	50%  {background-color: #4CAF50 ;left:0px; right: 0px;}
+ 	55% {background-color: MediumSeaGreen ;left:-2px; right: -2px;}
+ 	60% {background-color: #4CAF50 ;left:0px; right: 0px;}
+ 	65% {background-color: MediumSeaGreen ;left:2px; right: 2px;}
+	70%  {background-color: #4CAF50 ;left:0px; right: 0px;}
+ 	75% {background-color: MediumSeaGreen ;left:-2px; right: -2px;}
+ 	80% {background-color: #4CAF50 ;left:0px; right: 0px;}
+ 	100% {background-color: #4CAF50 ;left:0px; right: 0px;}
 }
 
 /* Standard syntax */
 @keyframes example {
-  0%   {background-color: green; left:0px; right: 0px;}
-  10%  {background-color: MediumSeaGreen ; left:5px; right: 5px;}
-  20%  {background-color: green ;left:0px; right: 0px;}
-  30% {background-color: MediumSeaGreen ;left:5px; right: 5px;}
-  40%   {background-color: green; left:0px; right: 0px;}
-  50%  {background-color: MediumSeaGreen ; left:5px; right: 5px;}
-  60%  {background-color: green ;left:0px; right: 0px;}
-  70% {background-color: MediumSeaGreen ;left:5px; right: 5px;}
-  80%  {background-color: green ;left:0px; right: 0px;}
-  90% {background-color: MediumSeaGreen ;left:5px; right: 5px;}
-  100%  {background-color: green ;left:0px; right: 0px;}
+	0%  {background-color: #4CAF50 ;left:0px; right: 0px;}
+	40%  {background-color: #4CAF50 ;left:0px; right: 0px;}
+	45% {background-color: Green ;left:2px; right: 2px;}
+	50%  {background-color: #4CAF50 ;left:0px; right: 0px;}
+ 	55% {background-color: Green ;left:-2px; right: -2px;}
+ 	60% {background-color: #4CAF50 ;left:0px; right: 0px;}
+ 	65% {background-color: Green ;left:2px; right: 2px;}
+	70%  {background-color: #4CAF50 ;left:0px; right: 0px;}
+ 	75% {background-color: Green ;left:-2px; right: -2px;}
+ 	80% {background-color: #4CAF50 ;left:0px; right: 0px;}
+ 	100% {background-color: #4CAF50 ;left:0px; right: 0px;}
 }
 .button:hover{
 	background-color: MediumSeaGreen;
@@ -107,15 +130,279 @@ body{
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .dobra2{
+	padding: 30px 15px;
+	margin:auto;
+	text-align:center;
+	font-size:30px;
+}
+@media (max-width: 480px) {
+  .dobra2 {
 	padding: 25px;
 	margin:auto;
 	text-align:center;
-	font-size:25px;
+	font-size:20px;
+  }
 }
 .texto-dobra-1{
 	font-size: 28px;
 	font-weight: bold;
+	display: block;
+	margin: auto;
+	vertical-align:middle;
 	color:white;
-	padding: 25px
-	margin: 10px;
+	padding: 15px;
+	text-shadow: 2px 2px 4px #000000;
+}
+@media (max-width: 480px) {
+  .texto-dobra-1 {
+    font-size: 20px;
+    padding: 0px 20px 20px 20px;
+    text-shadow: 2px 2px 4px #000000;
+  }
+}
+
+#titulo-video{
+	padding:15px;
+	margin:auto;
+	font-weight: bold;
+	text-align:center;
+	color:red;
+	text-shadow: 2px 2px 4px #000000;
+	font-size: 45px;
+}
+
+.video{
+	padding:20px;
+	margin:20px;
+	color:white;
+	margin:auto;
+	position:relative;
+	height: auto;
+	overflow:hidden;
+}
+.fundo-video{
+	background-color: #444;
+	padding:30px 15px;
+}
+.poder-palestra{
+	padding:30px 15px;
+}
+div.video {
+	font-size:30px;
+	text-align:center;
+	padding: 10px 15px;
+}
+@media (max-width: 480px) {
+  div.video{
+	font-size:20px;
+	text-align:center;
+	padding: 10px 15px;
+  }
+}
+.max-width{
+	margin:auto;
+	max-width: 500px;
+}
+
+.youtube-player {
+        position: relative;
+        padding-bottom: 56.23%;
+        /* Use 75% for 4:3 videos */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        margin: 5px;
+    }
+    
+    .youtube-player iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background: transparent;
+    }
+    
+    .youtube-player img {
+        bottom: 0;
+        display: block;
+        left: 0;
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        height: auto;
+        cursor: pointer;
+        -webkit-transition: .4s all;
+        -moz-transition: .4s all;
+        transition: .4s all;
+    }
+    
+    .youtube-player img:hover {
+        -webkit-filter: brightness(75%);
+    }
+    
+    .youtube-player .play {
+        height: 72px;
+        width: 72px;
+        left: 50%;
+        top: 50%;
+        margin-left: -36px;
+        margin-top: -36px;
+        position: absolute;
+        background: url("http://idebrasil.com.br/ednpalhoca/imagens/play.png") no-repeat;
+        cursor: pointer;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
+}
+.button-form {
+	background-color: #4CAF50; 
+	border: none;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 10px auto 10px auto;
+	display: flex; 
+	justify-content: center;
+	border-radius: 5px;
+	font-weight: bold;
+	position:relative;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+	animation-name: example;
+	animation-delay: 1s;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+	0%  {background-color: #4CAF50 ;left:0px; right: 0px;}
+	40%  {background-color: #4CAF50 ;left:0px; right: 0px;}
+	45% {background-color: MediumSeaGreen ;left:2px; right: 2px;}
+	50%  {background-color: #4CAF50 ;left:0px; right: 0px;}
+ 	55% {background-color: MediumSeaGreen ;left:-2px; right: -2px;}
+ 	60% {background-color: #4CAF50 ;left:0px; right: 0px;}
+ 	65% {background-color: MediumSeaGreen ;left:2px; right: 2px;}
+	70%  {background-color: #4CAF50 ;left:0px; right: 0px;}
+ 	75% {background-color: MediumSeaGreen ;left:-2px; right: -2px;}
+ 	80% {background-color: #4CAF50 ;left:0px; right: 0px;}
+ 	100% {background-color: #4CAF50 ;left:0px; right: 0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+	0%  {background-color: #4CAF50 ;left:0px; right: 0px;}
+	40%  {background-color: #4CAF50 ;left:0px; right: 0px;}
+	45% {background-color: Green ;left:2px; right: 2px;}
+	50%  {background-color: #4CAF50 ;left:0px; right: 0px;}
+ 	55% {background-color: Green ;left:-2px; right: -2px;}
+ 	60% {background-color: #4CAF50 ;left:0px; right: 0px;}
+ 	65% {background-color: Green ;left:2px; right: 2px;}
+	70%  {background-color: #4CAF50 ;left:0px; right: 0px;}
+ 	75% {background-color: Green ;left:-2px; right: -2px;}
+ 	80% {background-color: #4CAF50 ;left:0px; right: 0px;}
+ 	100% {background-color: #4CAF50 ;left:0px; right: 0px;}
+}
+.button-form:hover{
+	background-color: MediumSeaGreen;
+	transition: .5s ease;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
